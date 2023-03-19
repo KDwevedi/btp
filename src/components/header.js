@@ -12,6 +12,8 @@
 // } from '@heroicons/react/24/outline'
 // import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
+import { Link } from "react-router-dom";
+
 // const products = [
 // //   { name: 'Bionic Reading', description: 'Get a better understanding of the technique', href: '#', icon: AcademicCapIcon },
 //   { name: 'Pricing', description: 'Browse our curated pricing options', href: '#', icon: CursorArrowRaysIcon },
@@ -218,13 +220,16 @@ export default function Header() {
                     <a class="mr-5 hover:text-gray-900">Pricing</a>
                     <a class="mr-5 hover:text-gray-900">Our Team</a>
                     <a class="mr-5 hover:text-gray-900">Contact Us</a>
+                    <Link to="/demo" class="mr-5 hover:text-gray-900">Demo</Link>
                 </nav>
-                <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-                    Demo
+                {/* <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                    <Link to="/demo">
+                        Demo
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
-                </button>
+                    </Link>
+                </button> */}
             </div>
         </header>
     );

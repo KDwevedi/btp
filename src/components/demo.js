@@ -291,7 +291,7 @@ ben70.forEach(element => {
        </div>
        <div class="px-1 py-2 bg-white rounded-b-lg #e4e4e7">
            <label for="editor" class="sr-only">Publish post</label>
-           <textarea id="editor" rows="8" class="block w-full px-0 text-sm text-gray-800 bg-white border-0 #e4e4e7 focus:ring-0 light:text-black dark:placeholder-gray-400" placeholder="" required></textarea>
+           <textarea id="editor" rows="8" class="block w-full px-0 text-sm text-gray-800 bg-white border-0 #e4e4e7 focus:ring-0 light:text-black dark:placeholder-gray-400" placeholder="Input text here for demo..." required></textarea>
        </div>
    </div>
 </form>

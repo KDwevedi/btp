@@ -205,6 +205,7 @@ import { Link } from "react-router-dom";
 // }
 
 export default function Header() {
+
     return (
         <header class="text-gray-600 body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -215,11 +216,11 @@ export default function Header() {
                     <span class="ml-3 text-xl">BionicReader</span>
                 </a>
                 <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-900">Bionic Reading</a>
-                    <a class="mr-5 hover:text-gray-900">Testimonials</a>
-                    <a class="mr-5 hover:text-gray-900">Pricing</a>
-                    <a class="mr-5 hover:text-gray-900">Our Team</a>
-                    <a class="mr-5 hover:text-gray-900">Contact Us</a>
+                    <a href="#general-product-information" class="mr-5 hover:text-gray-900">Bionic Reading</a>
+                    <a href="#testimonials-section" class="mr-5 hover:text-gray-900">Testimonials</a>
+                    <a href="#payment-plans" class="mr-5 hover:text-gray-900">Pricing</a>
+                    <a href="#team-section" class="mr-5 hover:text-gray-900">Our Team</a>
+                    <a href="#contact-section" class="mr-5 hover:text-gray-900">Contact Us</a>
                     <Link to="/demo" class="mr-5 hover:text-gray-900">Demo</Link>
                 </nav>
                 {/* <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">

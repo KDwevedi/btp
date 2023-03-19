@@ -13,13 +13,6 @@ function PlainHeader() {
             <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                 <Link to="/" class="mr-5 hover:text-gray-900">Home</Link>
             </nav>
-            {/* <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-                <Link to="/">Home
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-                </Link>
-            </button> */}
         </div>
     </header>
     )
@@ -39,7 +32,8 @@ function Textbox () {
 //   </div>
 // </div>
 <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+  {/* <div class="container mx-auto flex px-0 py-24 items-center justify-center flex-col"> */}
+  <div class="px-10 py-24 items-center justify-center flex-col">
 <form >
    <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
        <div class="flex items-stretch justify-between px-10 py-2 border-b dark:border-gray-600">
@@ -102,9 +96,9 @@ function Textbox () {
    </div>
 </form>
 
-    <div class="text-center lg:w-2/3 w-full">
+    <div class="text-center lg:w-2/3 w-full mx-auto">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Try it to feel the difference!</h1>
-      <p class="mb-8 leading-relaxed">Bionic Text can be read upto 10% faster than raw text</p>
+      <p class="mb-8 leading-relaxed">Bionic Text can be read upto 50% faster than raw text</p>
       <div class="flex justify-center">
         <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Generate Bionic Text</button>
         <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Subscribe</button>

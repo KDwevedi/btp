@@ -183,7 +183,7 @@ export default function Testimonials () {
     return (
 
 <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
+  <div id="testimonials-section" class="container px-5 py-24 mx-auto">
     <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
     <div class="flex flex-wrap -m-4">
       <Testimonial name={data[0].name} title={data[0].title} testimony={data[0].testimony}/>

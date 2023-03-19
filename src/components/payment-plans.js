@@ -1,4 +1,29 @@
+import { useState } from "react";
+
+const Monthly = 0
+const Annually = 1
+
 export default function PayPlans(props) {
+
+  const [payPeriod, setPayPeriod] = useState(1)
+
+  let pricing = {
+    prices: {
+      0: ['Free', '49', '499', '4999'],
+      1: ['Free', '560','5700', '57000']
+    },
+    suffix: {
+      0: 'mo',
+      1: 'annum'
+    }
+  }
+
+  const buttonClass = {
+    0: ["py-1 px-4 bg-green-500 text-white focus:outline-none", "py-1 px-4 focus:outline-none"],
+    1: ["py-1 px-4 focus:outline-none", "py-1 px-4 bg-green-500 text-white focus:outline-none"]
+  }
+
+
     return (
     <section class="text-gray-600 body-font overflow-hidden">
         <div id="payment-plans" class="container px-5 py-24 mx-auto">
@@ -6,15 +31,15 @@ export default function PayPlans(props) {
                 <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">The best things aren't for free</p>
                 <div class="flex mx-auto border-2 border-green-500 rounded overflow-hidden mt-6">
-                    <button class="py-1 px-4 bg-green-500 text-white focus:outline-none">Monthly</button>
-                    <button class="py-1 px-4 focus:outline-none">Annually</button>
+                    <button class={buttonClass[payPeriod][Monthly]} onClick={()=>setPayPeriod(Monthly)}>Monthly</button>
+                    <button class={buttonClass[payPeriod][Annually]} onClick={()=>setPayPeriod(Annually)}>Annually</button>
                 </div>
             </div>
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
                     <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BASIC</h2>
-                        <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+                        <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{pricing.prices[payPeriod][0]}</h1>
                         <p class="flex items-center text-gray-600 mb-2">
                             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
@@ -50,8 +75,8 @@ export default function PayPlans(props) {
                         <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
                         <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PERSONAL</h2>
                         <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                            <span>₹49</span>
-                            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+                            <span>₹{pricing.prices[payPeriod][1]}</span>
+                            <span class="text-lg ml-1 font-normal text-gray-500">/{pricing.suffix[payPeriod]}</span>
                         </h1>
                         <p class="flex items-center text-gray-600 mb-2">
                         <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -93,8 +118,8 @@ export default function PayPlans(props) {
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PROFESSIONAL</h2>
           <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>₹499</span>
-            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            <span>₹{pricing.prices[payPeriod][2]}</span>
+            <span class="text-lg ml-1 font-normal text-gray-500">/{pricing.suffix[payPeriod]}</span>
           </h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
@@ -129,8 +154,8 @@ export default function PayPlans(props) {
         <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">ENTERPRISE</h2>
           <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-            <span>₹4999</span>
-            <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            <span>₹{pricing.prices[payPeriod][3]}</span>
+            <span class="text-lg ml-1 font-normal text-gray-500">/{pricing.suffix[payPeriod]}</span>
           </h1>
           <p class="flex items-center text-gray-600 mb-2">
             <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">

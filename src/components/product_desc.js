@@ -83,17 +83,22 @@ function Overview () {
         <section class="text-gray-600 body-font">
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                    <br class="hidden lg:inline-block"/>readymade gluten
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Transform the way you consume written content digitally
                     </h1>
-                    <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-                    <div class="flex justify-center">
-                        <button class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Button</button>
-                        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+                    <p class="mb-8 leading-relaxed">Our mission is to transform the way people read by leveraging the science of Bionic Reading and bring it to consumers through the latest technological advancements.</p>
+                    <div class="flex md:mt-4 mt-6">
+                         <button class="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded">
+                             <Link to="/demo">Demo</Link>
+                         </button>
+                        <a href="https://hackernoon.com/what-is-bionic-reading-and-how-is-it-possible" target="_blank" class="text-green-500 inline-flex items-center ml-4">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="image" src="Screenshot_20230319-191726~2.png"/>
+                <img  alt="image" src="https://raw.githubusercontent.com/KDwevedi/btp/45dc98722c4879a17876f8b683917e1604e7daa6/src/assets/Screenshot_20230319-191726%7E2.png"/>
             </div>
              </div>
 </section>

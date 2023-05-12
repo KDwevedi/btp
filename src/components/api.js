@@ -24,11 +24,12 @@ export default function Signin () {
 
                 if(data=="Valid"){
                     document.querySelector("#showapi").innerText=`Your API Key is: ${ makeid(5)}`;
+                    document.querySelector("#showapi").innerHTML="";
                     
                  }else{
                     document.querySelector("#showapi").innerText=`You are signed in.`;
                     if(data=="Signin"){
-                        window.open("https://buy.stripe.com/9AQaEU1Mf9LmbrWdQT","_blank");
+                        window.open("https://buy.stripe.com/test_bIY7uh5UObAO0TucMM","_blank");
                     }
                     
                  }

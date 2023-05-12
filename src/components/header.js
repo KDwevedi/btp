@@ -217,6 +217,7 @@ export default function Header() {
                 </a>
                 <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                     <a href="#general-product-information" class="mr-5 hover:text-gray-900">Bionic Reading</a>
+                    <a href="#api" class="mr-5 hover:text-gray-900">API</a>
                     <a href="#testimonials-section" class="mr-5 hover:text-gray-900">Testimonials</a>
                     <a href="#payment-plans" class="mr-5 hover:text-gray-900">Pricing</a>
                     <a href="#team-section" class="mr-5 hover:text-gray-900">Our Team</a>

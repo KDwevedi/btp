@@ -8,13 +8,14 @@ import Team from './components/our-team';
 import Contact from './components/contact';
 import DemoPage from './components/demo';
 import {Routes, Route } from 'react-router-dom';
-
+import Signin from './components/api'
 function Home () {
   return (
 
     <>
     <Header/>
     <ProdDescription/>
+    <Signin/>
     <Testimonial />
     <PayPlans/>
     <Team/>

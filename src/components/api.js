@@ -26,7 +26,7 @@ export default function Signin () {
                     document.querySelector("#showapi").innerText=`Your API Key is: ${ makeid(5)}`;
                     
                  }else{
-                    if(data==""){
+                    if(data=="Signin"){
                         window.open("https://buy.stripe.com/9AQaEU1Mf9LmbrWdQT","_blank");
                     }
                     

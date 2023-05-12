@@ -24,7 +24,6 @@ export default function Signin () {
 
                 if(data=="Valid"){
                     document.querySelector("#showapi").innerText=`Your API Key is: ${ makeid(5)}`;
-                    document.querySelector("#showapi").innerHTML="";
                     
                  }else{
                     document.querySelector("#showapi").innerText=`You are signed in.`;
@@ -42,7 +41,7 @@ export default function Signin () {
     return (
 
 <section class="text-gray-600 body-font">
-    <div id="showapi"></div>
+    
   <div id="api" class="container px-5 py-24 mx-auto">
     <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">API</h1>
     <div >
@@ -50,6 +49,7 @@ export default function Signin () {
     </div>
     <form class="signin">
       <div class="form-group">
+      <div id="showapi"></div>
         <input type="email" class="form-control" id="inptemail" aria-describedby="emailHelp" placeholder="Enter email"></input>
 
 <input type="password" class="form-control" id="inptpassword" aria-describedby="emailHelp" placeholder="Enter Password" ></input>

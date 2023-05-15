@@ -14,7 +14,7 @@ export default function Team () {
           <div class="flex-grow sm:pl-8">
             <h2 class="title-font font-medium text-lg text-gray-900">Dhruv Atreja</h2>
             <h3 class="text-gray-500 mb-3">Software Engineer</h3>
-            <p class="mb-4">Startup ke CEO se baat kari thi, unhe product kaafi pasand aaya</p>
+            <p class="mb-4">Every victory is a new steppinf stone.</p>
             <span class="inline-flex">
               <a class="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -41,7 +41,7 @@ export default function Team () {
           <div class="flex-grow sm:pl-8">
             <h2 class="title-font font-medium text-lg text-gray-900">Shreya Saini</h2>
             <h3 class="text-gray-500 mb-3">Software Engineer</h3>
-            <p class="mb-4">Mein na hun toh kuch kaam nahi karne waale ye teen.</p>
+            <p class="mb-4">No team can function without direction.</p>
             <span class="inline-flex">
               <a class="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function Team () {
           <div class="flex-grow sm:pl-8">
             <h2 class="title-font font-medium text-lg text-gray-900">Manisha Singh</h2>
             <h3 class="text-gray-500 mb-3">Software Engineer</h3>
-            <p class="mb-4">Banalo yaar, karke khatam karo.</p>
+            <p class="mb-4">Bionic reading is a spectacular productivity tool.</p>
             <span class="inline-flex">
               <a class="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ export default function Team () {
           <div class="flex-grow sm:pl-8">
             <h2 class="title-font font-medium text-lg text-gray-900">Kanav Dwevedi</h2>
             <h3 class="text-gray-500 mb-3">Software Engineer</h3>
-            <p class="mb-4">Kuch bhi banalenge, kya hi farak padta hai.</p>
+            <p class="mb-4">Determination and diligence deliver.</p>
             <span class="inline-flex">
               <a class="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">

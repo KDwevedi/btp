@@ -14,7 +14,7 @@ export default function Team () {
           <div class="flex-grow sm:pl-8">
             <h2 class="title-font font-medium text-lg text-gray-900">Dhruv Atreja</h2>
             <h3 class="text-gray-500 mb-3">Software Engineer</h3>
-            <p class="mb-4">Every victory is a new steppinf stone.</p>
+            <p class="mb-4">Every victory is a new stepping stone.</p>
             <span class="inline-flex">
               <a class="text-gray-500">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">

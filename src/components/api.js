@@ -47,7 +47,7 @@ export default function Signin () {
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">API Portal</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Sign-in to get your API key</p>
     </div>
-    <div id="showapi"></div>
+    <div id="showapi" class="flex flex-col text-center w-full mb-12"></div>
     <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
       <div class="relative flex-grow w-full">
         <label for="full-name" class="leading-7 text-sm text-gray-600">Email</label>

@@ -294,13 +294,13 @@ ben70.forEach(element => {
 <form >
 <div className="Converter">
           <div>
-            <p>Choose an Image</p>
+            <p>Choose an Image or PDF</p>
             <input
               type="file"
               name=""
               id=""
               onChange={handleImageChange}
-              accept="image/*"
+              accept="image/*, application/pdf"
             />
           </div>
           {/* {progress < 100 && progress > 0 && <div>

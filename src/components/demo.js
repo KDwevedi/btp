@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom"
+import Converter from "./imagetotext";
+import { useEffect, useState } from "react";
+
 
 function PlainHeader() {
     return (
@@ -20,6 +23,64 @@ function PlainHeader() {
 }
 
 function Textbox () {
+    const [ocr, setOcr] = useState("");
+    const [imageData, setImageData] = useState(null);
+        const convertImageToText = async () => {
+        if (!imageData) return;
+
+      var myHeaders = new Headers();
+      myHeaders.append("apikey", "K89129283688957");
+      var formdata = new FormData();
+      formdata.append("language", "eng");
+      formdata.append("isOverlayRequired", "false");
+      formdata.append("base64Image", imageData);
+      formdata.append("iscreatesearchablepdf", "false");
+      formdata.append("issearchablepdfhidetextlayer", "false");
+      var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: formdata,
+        redirect: 'follow'
+    };
+
+        fetch("https://api.ocr.space/parse/image", requestOptions)
+        .then(response => response.text())
+        .then(result => JSON.parse(result)["ParsedResults"][0]["ParsedText"])
+        .then(text => {
+            const input = document.querySelector("#editor");
+            input.value = text;
+
+        })
+        .catch(error => console.log('error', error));
+
+            //   await worker.load();
+            //   await worker.loadLanguage("eng");
+            //   await worker.initialize("eng");
+            //   const {
+            //     data: { text },
+            //   } = await worker.recognize(imageData);
+        
+            const input = document.querySelector("#editor");
+            input.value = ocr;
+            
+            };
+        useEffect(() => {
+      convertImageToText();
+    }, [imageData]);
+  
+    function handleImageChange(e) {
+      const file = e.target.files[0];
+      if(!file)return;
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const imageDataUri = reader.result;
+        console.log({ imageDataUri });
+        setImageData(imageDataUri);
+      };
+      reader.readAsDataURL(file);
+    }
+
+       
     function bionic(){
         const input = document.querySelector("#editor");
 const output = document.querySelector("#message");
@@ -231,6 +292,28 @@ ben70.forEach(element => {
   {/* <div class="container mx-auto flex px-0 py-24 items-center justify-center flex-col"> */}
   <div class="px-10 py-24 items-center justify-center flex-col">
 <form >
+<div className="Converter">
+          <div>
+            <p>Choose an Image</p>
+            <input
+              type="file"
+              name=""
+              id=""
+              onChange={handleImageChange}
+              accept="image/*"
+            />
+          </div>
+          {/* {progress < 100 && progress > 0 && <div>
+            <div className="progress-label">Progress ({progress}%)</div>
+            <div className="progress-bar">
+              <div className="progress" style={{width: `${progress}%`}} ></div>
+            </div>
+          </div>} */}
+          <div className="display-flex">
+            <img src={imageData} alt="" srcset="" />
+            {/* <p>{ocr}</p> */}
+          </div>
+        </div>
    <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
        <div class="flex items-stretch justify-between px-10 py-2 border-b dark:border-gray-600">
            <div class="flex flex-wrap items-center divide-gray-200 sm:divide-x dark:divide-gray-600">
